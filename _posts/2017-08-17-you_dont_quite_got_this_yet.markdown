@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You don't quite got this yet"
-date:   2017-08-17 20:37:35 +0000
+date:   2017-08-17 16:37:36 -0400
 ---
 
 
@@ -15,7 +15,7 @@ If only I had watched that damn video.
 
 Languages make me happy, so a language-related app seemed like fun. Something along the lines of Google Translate but Rosetta Stone-style (the actual stone, not the language-learning platform) where you could translate into multiple languages at once and then get alternate translations, etc. I set up my project the way we had been learning: 
 * config folder for your environment, 
-* bin folder for your running file, 
+* bin folder for your executable file, 
 * and lib folder for all classes and modules. 
 
 I used Bundler to install my gems, set up the outline of my interface in place, and built out my classes. I grabbed all the CSS elements, ids, and classes I'd need to target everything I needed from Google Translate. Smooth sailing.
