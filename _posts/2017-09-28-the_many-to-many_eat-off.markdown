@@ -67,4 +67,4 @@ end
 
 And that's how you get a many-to-many join table set up with foreign keys and get your models working as they should. Perhaps you can imagine the relief when my first `@user` was able to retrieve all dietary preferences that they were associated with through a simple `@user.diet_prefs`.
 
-I'll cover the Sinatra/ERB form complexities resulting from many-to-many relationships in my next post ;)
+I'll cover the Sinatra/ERB form complexities resulting from many-to-many relationships in [my next post](http://marielfrank.com/2017/09/28/many-to-many_form-alities/) ;)
