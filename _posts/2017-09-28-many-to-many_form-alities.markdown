@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Many-to-many form-alities"
-date:   2017-09-28 21:34:26 +0000
+date:   2017-09-28 17:34:27 -0400
 ---
 
 
 With my brain finally wrapped around [building objects and tables correctly for a many-to-many relationship](http://marielfrank.com/2017/09/28/the_many-to-many_eat-off/), I came to a much more complicated challenge in [my Sinatra project](https://github.com/marielfrank/dineable-app)--an ERB form and Sinatra `POST` route that could do the following:
 
 1. Create a new `Restaurant` instance
-2. Associate the `Restaurant` instance with its `Owner` instance
+2. Associate the `Restaurant` instance with its `User` instance
 3. Accept properties such as "name" or "address" that would be fed as parameters to the `RestaurantController`, assigned, and could later be retrieved by `Restaurant` instances: `@mamouns.address = "St. Mark's Place, NYC"`
 4. Associate the `Restaurant` instance with one or more existant `DietPref` instances through checkboxes
 5. Allow the user to add a new dietary preference and then associate it with that `Restaurant` instance
