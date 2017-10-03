@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "You don't quite got this yet"
-date:   2017-08-17 16:37:36 -0400
+title:      "You don't quite got this yet"
+date:       2017-08-17 16:37:36 -0400
+permalink:  you_dont_quite_got_this_yet
 ---
 
 
@@ -29,7 +30,7 @@ Now, with a little research I discovered that Google Translate does have an API 
 1. I was committing every single change to GitHub and I had no clue how to keep my API key from ending up on GitHub.
 2. Google's API does not allow you to get those sweet, sweet alternate translations, i.e., the details that I needed to satisfy the requirement of the project.
 
-Fortunately, another Flatiron student told me about [dotenv](https://github.com/bkeepers/dotenv) which took care of the API key security. But I now had to go a scrape a totally different site with a totally different structure and different language capabilities. I settled on wordreference.com. By the way, at this point, I was already a week and a half into the project--a far cry from the "day or two" I'd imagined.
+Fortunately, another Flatiron student told me about [dotenv](https://github.com/bkeepers/dotenv) which took care of the API key security. But I now had to go and scrape a totally different site with a totally different structure and different language capabilities. I settled on wordreference.com. By the way, at this point, I was already a week and a half into the project--a far cry from the "day or two" I'd imagined.
 
 Once I got my scraper rebuilt for wordreference, my API functionality set up, and got through debugging, I felt pretty set to move on to the next step--getting my project gem-ready.
 
