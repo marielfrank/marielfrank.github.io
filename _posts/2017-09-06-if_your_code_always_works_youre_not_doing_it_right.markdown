@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "If your code always works, you're not doing it right"
-date:   2017-09-06 22:04:05 +0000
+title:      "If your code always works, you're not doing it right"
+date:       2017-09-06 18:04:06 -0400
+permalink:  if_your_code_always_works_youre_not_doing_it_right
 ---
 
 >"How do you not understand why something isn't working if you're the one who built it?"
@@ -10,13 +11,15 @@ One of my best friends recently asked me this over dinner when I was explaining 
 
 I laughed.
 
-If it were that simple, there wouldn't be much demand for programmers, I told her. But most of what we do is debugging--moving code slowly from a state of broken to fixed. And this is necessary because 1. your code doesn't exist in isolation--it interacts with other code and platforms, and 2. even if you understand your own code fairly well, your code is based on other code that you may not understand quite as expertly.
+If it were that simple, there wouldn't be much demand for programmers, I told her. But most of what we do is debugging--moving code slowly from a state of broken to fixed. And this is necessary because 
+1. your code doesn't exist in isolation--it interacts with other code and platforms, and 
+2. even if you understand your own code fairly well, your code is based on other code that you may not understand quite as expertly.
 
 Back when I was working with HTML and CSS on marketing emails and landing pages there was always at least one platform that wouldn't render the code as it was supposed to appear (looking at you, [most versions of Outlook](http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/) and [Internet Explorer](http://imgur.com/ZwyPqDF)). 
 
 Let's say, you wanted to center something on your page. Simple, right? Except that invariably some specific version of some browser on some device with some specific aspect ratio would float your element over to the left. And finally when you managed to center what you wanted on THAT platform, another platform suddenly had issues you didn't anticipate.
 
-###This was my favorite kind of work at my old job.
+*This was my favorite kind of work at my old job.*
 
 
 ![](http://i.imgur.com/e16qOEj.gif)
