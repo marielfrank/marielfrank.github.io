@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Many-to-many form-alities"
-date:   2017-09-28 17:34:27 -0400
+title:      "Many-to-many form-alities"
+date:       2017-09-28 17:34:27 -0400
+permalink:  many-to-many_form-alities
 ---
 
 
@@ -88,7 +89,7 @@ The way it works:
 
 `name` in `input` tells the `params` hash where to place the `value` or `id` of the preference's id. What we're doing is saying, "hey params hash, add this dietary preference id into an array of dietary preference ids that restaurant is keeping track of." (The key here is to remember that our restaurant gets those ids through the RestaurantDietPref object, so we don't need any additional go-betweens.) Granted, that extra empty array (`[]`) at the end of the `name` is a bit confusing. It seems like ERB just knows that it's not supposed to be an empty array after the first id has been added.
 
-So let's say I have a restaurant named "Mamouns" with an address of "St. Mark's Place, NYC" that is both vegetarian with an id of "1" and gluten free with an id of "2" (both of which had been previously added as dietary preferences through oter restaurants), then our params hash would look like:
+So let's say I have a restaurant named "Mamouns" with an address of "St. Mark's Place, NYC" that is both vegetarian with an id of "1" and gluten free with an id of "2" (both of which had been previously added as dietary preferences through other restaurants), then our params hash would look like:
 
 ```
 { :restaurant => { :name => "Mamouns", :address => "St. Mark's Place, NYC", :diet_pref_ids => ["1", "2"] } }
