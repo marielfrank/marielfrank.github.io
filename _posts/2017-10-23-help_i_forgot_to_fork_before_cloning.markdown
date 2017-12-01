@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Help! I forgot to fork before cloning!"
-date:       2017-10-23 22:11:18 +0000
+date:       2017-10-23 18:11:19 -0400
 permalink:  help_i_forgot_to_fork_before_cloning
 ---
 
@@ -62,5 +62,6 @@ This should confirm the new remote origin path.
 Yay! You did it!
 
 ![](https://explainxkcd.com/wiki/images/4/4d/git.png)
+*comic from xkcd.com*
 
 
