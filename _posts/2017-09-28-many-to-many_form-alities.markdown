@@ -95,7 +95,7 @@ So let's say I have a restaurant named "Mamouns" with an address of "St. Mark's 
 { :restaurant => { :name => "Mamouns", :address => "St. Mark's Place, NYC", :diet_pref_ids => ["1", "2"] } }
 ```
 
-thus alowing us to run this statement to create the Restaurant instance:
+thus allowing us to run this statement to create the Restaurant instance:
 
 ```
 @restaurant = Restaurant.create(params[:restaurant])
