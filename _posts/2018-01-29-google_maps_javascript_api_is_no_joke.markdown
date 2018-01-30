@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Google Maps Javascript API is no joke"
-date:       2018-01-29 23:27:39 +0000
+date:       2018-01-29 18:27:40 -0500
 permalink:  google_maps_javascript_api_is_no_joke
 ---
 
@@ -35,7 +35,7 @@ The second step just required a `patch` request to update my `current_user` with
 
 Well, sort of. I got an error throw at me by my user controller's strong params about my :current_position parameter being unpermitted. I spent about an hour debugging, trying to find the typo I knew had to be hiding somewhere before I finally threw in the towel and asked for help.
 
-Thanks to a few fellow Flatironers on slack, I discovered that I did not have a typo lurking, but rather I'd been trying to save something that Rails strong params with SQLite3 simply would't permit: a hash. I quickly split this into two attributes (`current_lat` and `current_lng`) and everything proceeded smoothly.
+Thanks to a few fellow Flatironers on slack, I discovered that I did not have a typo lurking, but rather I'd been trying to save something that Rails strong params with SQLite3 simply wouldn't permit: a hash. I quickly split this into two attributes (`current_lat` and `current_lng`) and everything proceeded smoothly.
 
 **Note to self #3: JS objects are actually amazingly useful**
 
