@@ -43,7 +43,26 @@ Now that I had my user's location, I needed to find out how far away (and how lo
 
 ![](https://i.imgur.com/XQv548T.png)
 
-Oh man, I thought, there must be *some* way to keep track of the restrooms in an orderly fashion with ids that match the database, latitude, and longitude...
+Oh man, I thought, there must be *some* way to keep track of the restrooms in an orderly fashion with ids that match the database, latitude, and longitude...Oh, right:
+
+```
+let restrooms = [];
+
+function Restroom(attr) {
+    this.id = attr.id;
+    this.address = attr.address;
+    this.duration = attr.duration;
+    this.distance = attr.distance;
+};
+
+function getRestroomsLocs() {
+    $.get("/restrooms.json", function(data) {
+        data.forEach(rest => {
+            restrooms.push(new Restroom(rest));
+        });
+    });
+};
+```
 
 And this is why I want to give a shout out to the Distance Matrix for helping me truly understand the value of JS objects. THIS is where JS objects really shine. 
 
