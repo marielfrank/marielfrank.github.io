@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Signup in React/Redux with JWT authentication"
-date:       2018-04-11 18:00:18 +0000
+date:       2018-04-11 14:00:19 -0400
 permalink:  signup_in_react_redux_with_jwt_authentication
 ---
 
@@ -152,7 +152,7 @@ In the same file, this is the authenticate action I'm dispatching in `signup`. P
 export const authenticate = (credentials) => {
     return dispatch => {
         dispatch({type: 'AUTHENTICATION_REQUEST'}) 
-				// this line above just lets my reducer know that we are currently authenticating someone
+        // this line above just lets my reducer know that we are currently authenticating someone
 
         return fetch(`${API_URL}/user_token`, { 
             method: 'POST',
